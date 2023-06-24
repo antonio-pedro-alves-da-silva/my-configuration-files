@@ -1,0 +1,40 @@
+  # apps
+"xdg-open about:blank"
+  Mod4 + b
+
+"qterminal"
+  Mod4 + Return
+
+"pkill qterminal"
+  Mod4 + shift + Return
+
+  # Display Resolutions
+"xrandr -s 1366x768" 
+  Mod4 + 1
+
+"xrandr -s 2048x1152"
+  Mod4 + 2
+
+  # Maximize and Minimize windows
+"wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
+  Mod4 + m
+
+"wmctrl -r :ACTIVE: -b toggle,hidden"
+  Mod4 + n
+
+  # maximize horizontally and vertically
+"wmctrl -r :ACTIVE: -b add,maximized_horz"
+  Mod4 + h
+
+"wmctrl -r :ACTIVE: -b add,maximized_vert"
+  Mod4 + v
+
+  # moving the window
+"wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz && wmctrl -r :ACTIVE: -e 0,0,0,-1,-1 ; wmctrl -r :ACTIVE: -b add,maximized_vert ; xdotool getactivewindow windowsize 50% 100%"
+  Mod4 + Control + Left
+
+"bash ~/.move_window_to_end_and_resize_vertically.sh"
+  Mod4 + Control + Right
+  # to close windows and open windows
+"xdotool getwindowfocus windowkill"
+  Mod4 + c
