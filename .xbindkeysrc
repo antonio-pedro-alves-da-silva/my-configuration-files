@@ -1,5 +1,5 @@
   # apps
-"xdg-open about:blank"
+"xdg-open"
   Mod4 + b
 
 "qterminal"
@@ -22,19 +22,13 @@
 "wmctrl -r :ACTIVE: -b toggle,hidden"
   Mod4 + n
 
-  # maximize horizontally and vertically
-"wmctrl -r :ACTIVE: -b add,maximized_horz"
-  Mod4 + h
-
-"wmctrl -r :ACTIVE: -b add,maximized_vert"
-  Mod4 + v
-
-  # moving the window
+  # moving the window and resizing 50% of the width
 "wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz && wmctrl -r :ACTIVE: -e 0,0,0,-1,-1 ; wmctrl -r :ACTIVE: -b add,maximized_vert ; xdotool getactivewindow windowsize 50% 100%"
   Mod4 + Control + Left
 
-"bash ~/.move_window_to_end_and_resize_vertically.sh"
+"bash wmctrl -r :ACTIVE: -e 0,$(xdpyinfo | awk '/dimensions/ {print $2}' | awk -F'x' '{print $1 / 2}'),0,0,0 ; xdotool getactivewindow windowsize 50% 100%"
   Mod4 + Control + Right
   # to close windows and open windows
 "xdotool getwindowfocus windowkill"
   Mod4 + c
+
