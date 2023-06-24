@@ -1,0 +1,64 @@
+
+	installing apt-fast and other packages
+sudo add-apt-repository ppa:apt-fast/stable
+sudo apt update
+sudo apt install apt-fast
+
+sudo apt-fast install git npm nodejs flatpak curl hardinfo snapd xdotool xbindkeys nautilus ffmpeg pavucontrol zsh -y
+
+	instalaçaõ do zsh
+
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
+
+sudo apt-get install fonts-powerline
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+  Devo adicionar está parte manualmente ao 
+~/.zshrc
+
+   Plugins
+plugins=(git 
+zsh-syntax-highlighting
+zsh-autosuggestions
+k
+sudo
+copypath
+dirhistory
+)
+
+    configurando os meus atalhos
+git clone https://github.com/A-P-A-D-S/my-configuration-files ~/
+chmod +x ~/my-configuration-files/move_window_to_end_and_resize_vertically.sh 
+
+mv ~/my-configuration-files/rc.xml ~/.config/openbox/rc.xml
+
+	session settings > autostarts
+[add resolution] - bash ~/my-configuration-files/my_configurations.sh
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
+zsh-syntax-highlighting - ajuda a identificar erros de digitação
+zsh-autosuggestions - ele sugere comandos com base no historico de comandos e mostra sugestoes se você digitar tab
+k - O plugin K é útil para exibir detalhes como a data de criação, o tamanho e as permissões de uso de arquivos e pastas.
+sudo - redigitaria o comando com sudo ao usar escape
+copypath - copiaria o diretorio atual ao usar copypath
+dirhistory  - add shorthands to move through directories 
+
+	installing using flatpak
+flatpak remote-add --user flathub https://flathub.org/repo/flathub.flatpakrepo
+
+flatpak install -y --user flathub com.brave.Browser
+
+
+	
+
+	# changing the default browser and the default file manager
+preferences > Lxqt settings > file associations
+
+my brave extension
+	mate translate
+	suspend tab
+
+
