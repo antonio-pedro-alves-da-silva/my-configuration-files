@@ -48,9 +48,10 @@ dirhistory  - add shorthands to move through directories like alt+Left arrow
 
 	installing using flatpak
 flatpak remote-add --user flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install --user -y flathub com.brave.Browser
 
-	installing using snap
-snap install brave
+  installing auto cpu frequency
+https://github.com/AdnanHodzic/auto-cpufreq
 
 	# changing the default browser and the default file manager
 preferences > Lxqt settings > file associations
