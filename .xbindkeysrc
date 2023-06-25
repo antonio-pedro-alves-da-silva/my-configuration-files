@@ -1,9 +1,12 @@
   # apps
-"xdg-open"
+"flatpak run com.brave.Browser"
   Mod4 + b
 
 "qterminal"
   Mod4 + Return
+
+"code"
+  Mod4 + v
 
 "pkill qterminal"
   Mod4 + shift + Return

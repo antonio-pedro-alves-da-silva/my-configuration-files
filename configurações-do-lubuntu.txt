@@ -29,7 +29,7 @@ copypath
 dirhistory
 )
 
-    configurando os meus atalhos
+    configurando os meus atalhos e o windown manager
 git clone https://github.com/A-P-A-D-S/my-configuration-files ~/
 
 mv ~/my-configuration-files/rc.xml ~/.config/openbox/rc.xml
@@ -44,15 +44,13 @@ zsh-autosuggestions - ele sugere comandos com base no historico de comandos e mo
 k - O plugin K é útil para exibir detalhes como a data de criação, o tamanho e as permissões de uso de arquivos e pastas.
 sudo - redigitaria o comando com sudo ao usar escape
 copypath - copiaria o diretorio atual ao usar copypath
-dirhistory  - add shorthands to move through directories 
+dirhistory  - add shorthands to move through directories like alt+Left arrow
 
 	installing using flatpak
 flatpak remote-add --user flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install -y --user flathub com.brave.Browser
-
-
-	
+	installing using snap
+snap install brave
 
 	# changing the default browser and the default file manager
 preferences > Lxqt settings > file associations
@@ -60,5 +58,5 @@ preferences > Lxqt settings > file associations
 my brave extension
 	mate translate
 	suspend tab
-
+	shortcuts keys
 
