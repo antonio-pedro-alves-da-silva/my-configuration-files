@@ -31,9 +31,9 @@ dirhistory
 
     configurando os meus atalhos
 git clone https://github.com/A-P-A-D-S/my-configuration-files ~/
-chmod +x ~/my-configuration-files/move_window_to_end_and_resize_vertically.sh 
 
 mv ~/my-configuration-files/rc.xml ~/.config/openbox/rc.xml
+mv ~/my-configuration-files/.xbindkeysrc
 
 	session settings > autostarts
 [add resolution] - bash ~/my-configuration-files/my_configurations.sh
