@@ -2,14 +2,11 @@
 "flatpak run com.brave.Browser"
   Mod4 + b
 
-"qterminal"
+"tilix"
   Mod4 + Return
 
 "code"
   Mod4 + v
-
-"pkill qterminal"
-  Mod4 + shift + Return
 
   # Display Resolutions
 "xrandr -s 1366x768" 
@@ -24,6 +21,9 @@
 
 "wmctrl -r :ACTIVE: -b toggle,hidden"
   Mod4 + n
+
+"wmctrl -r :ACTIVE: -b toggle,fullscreen"
+  Mod4 + f
 
   # moving the window and resizing 50% of the width
 "wmctrl -r :ACTIVE: -e 0,0,0,0,0 ; xdotool getactivewindow windowsize 50% 100%"
