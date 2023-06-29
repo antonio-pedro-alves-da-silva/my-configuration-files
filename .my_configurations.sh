@@ -1,6 +1,6 @@
 # setting the right keyboard
 
-setxkbmap -model abnt2 -layout br
+# setxkbmap -model abnt2 -layout br
 
 # adding a new display
 
