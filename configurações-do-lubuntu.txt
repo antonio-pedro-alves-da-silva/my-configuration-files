@@ -37,11 +37,15 @@ dirhistory
     configurando os meus atalhos e o windown manager
 git clone https://github.com/A-P-A-D-S/my-configuration-files
 
-cp ~/my-configuration-files/rc.xml ~/.config/openbox/rc.xml
-cp ~/my-configuration-files/.xbindkeysrc ~/.xbindkeysrc
 
 	session settings > autostarts
 [add resolution] - bash ~/my-configuration-files/.my_configurations.sh
+
+       sessoin settings > Basic setting > set the window manager as openbox if you don`t do that the xbindkey and openbox entrarao em conflito
+
+cp ~/my-configuration-files/rc.xml ~/.config/openbox/rc.xml
+cp ~/my-configuration-files/.xbindkeysrc ~/.xbindkeysrc
+cp ~/my-configuration-files/.my_configurations.sh ~/
 
 
 zsh-syntax-highlighting - ajuda a identificar erros de digitação
