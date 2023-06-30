@@ -35,7 +35,7 @@ dirhistory
 )
 
     configurando os meus atalhos e o windown manager
-git clone https://github.com/A-P-A-D-S/my-configuration-files
+git clone --depth=1 https://github.com/A-P-A-D-S/my-configuration-files
 
 
 	session settings > autostarts
@@ -50,7 +50,6 @@ cp ~/my-configuration-files/.my_configurations.sh ~/
 
 zsh-syntax-highlighting - ajuda a identificar erros de digitação
 zsh-autosuggestions - ele sugere comandos com base no historico de comandos e mostra sugestoes se você digitar tab
-k - O plugin K é útil para exibir detalhes como a data de criação, o tamanho e as permissões de uso de arquivos e pastas.
 sudo - redigitaria o comando com sudo ao usar escape
 copypath - copiaria o diretorio atual ao usar copypath
 dirhistory  - add shorthands to move through directories like alt+Left arrow
