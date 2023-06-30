@@ -19,6 +19,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
   Devo adicionar está parte manualmente ao 
 ~/.zshrc
 
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
    Plugins
 plugins=(git 
 zsh-syntax-highlighting
@@ -32,13 +34,13 @@ dirhistory
     configurando os meus atalhos e o windown manager
 git clone https://github.com/A-P-A-D-S/my-configuration-files ~/
 
-mv ~/my-configuration-files/rc.xml ~/.config/openbox/rc.xml
-mv ~/my-configuration-files/.xbindkeysrc
+cp ~/my-configuration-files/rc.xml ~/.config/openbox/rc.xml
+cp ~/my-configuration-files/.xbindkeysrc ~/.xbindkeysrc
 
 	session settings > autostarts
 [add resolution] - bash ~/my-configuration-files/my_configurations.sh
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+
 zsh-syntax-highlighting - ajuda a identificar erros de digitação
 zsh-autosuggestions - ele sugere comandos com base no historico de comandos e mostra sugestoes se você digitar tab
 k - O plugin K é útil para exibir detalhes como a data de criação, o tamanho e as permissões de uso de arquivos e pastas.
