@@ -1,6 +1,4 @@
   # apps
-"flatpak run com.brave.Browser"
-  Mod4 + b
 
 "tilix"
   Mod4 + Return
@@ -28,10 +26,11 @@
   # moving the window and resizing 50% of the width
 "wmctrl -r :ACTIVE: -e 0,0,0,0,0 ; xdotool getactivewindow windowsize 50% 100%"
   Mod4 + Control + Left
-u
+
 "wmctrl -r :ACTIVE: -e 0,$(xdpyinfo | awk '/dimensions/ {print $2}' | awk -F'x' '{print $1 / 2}'),0,0,0 ; xdotool getactivewindow windowsize 50% 100%"
   Mod4 + Control + Right
   # to close windows and open windows
+
 "xdotool getwindowfocus windowkill"
   Mod4 + c
 
