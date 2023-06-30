@@ -1,8 +1,11 @@
 
 	installing apt-fast and other packages
+# axel help to download multiple files simultaneously and act as download accelerator.
+sudo apt install axel -y
+
 sudo add-apt-repository ppa:apt-fast/stable
 sudo apt update
-sudo apt install apt-fast
+sudo apt install apt-fast -y
 
 sudo apt-fast install git npm nodejs flatpak curl hardinfo snapd xdotool xbindkeys nautilus ffmpeg pavucontrol zsh tilix -y
 
