@@ -1,10 +1,9 @@
   # apps
+"code"
+  Mod4 + v
 
 "tilix"
   Mod4 + Return
-
-"code"
-  Mod4 + v
 
   # Display Resolutions
 "xrandr -s 1366x768" 
@@ -30,7 +29,12 @@
 "wmctrl -r :ACTIVE: -e 0,$(xdpyinfo | awk '/dimensions/ {print $2}' | awk -F'x' '{print $1 / 2}'),0,0,0 ; xdotool getactivewindow windowsize 50% 100%"
   Mod4 + Control + Right
   # to close windows and open windows
-
 "xdotool getwindowfocus windowkill"
   Mod4 + c
 
+  # changing the brightness of the window
+"bash ~/diminuir-brilho.sh"
+  Mod4 + shift + Down
+
+"bash ~/aumentar-brilho.sh"
+  Mod4 + shift + Up

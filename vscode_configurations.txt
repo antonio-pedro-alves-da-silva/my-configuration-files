@@ -1,7 +1,0 @@
-
-
-    extensões
-live server
-Auto Rename Tag
-Auto Close Tagy
-Prettier - Code formatter
