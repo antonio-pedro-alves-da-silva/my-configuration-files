@@ -1,3 +1,6 @@
+# Mod4 = windows 
+# Mod1 = Alt
+
   # apps
 "code"
   Mod4 + v
@@ -33,8 +36,16 @@
   Mod4 + c
 
   # changing the brightness of the window
-"bash ~/diminuir-brilho.sh"
+"bash ~/my-configuration-files/diminuir-brilho.sh"
   Mod4 + shift + Down
 
-"bash ~/aumentar-brilho.sh"
+"bash ~/my-configuration-files/aumentar-brilho.sh"
   Mod4 + shift + Up
+ 
+
+  # changing the volume of the sound
+"amixer set Master 10%+"
+  Mod4 + Mod1 + Up
+
+"amixer set Master 10%-"
+  Mod4 + Mod1 + Down
