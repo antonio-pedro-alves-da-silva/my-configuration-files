@@ -32,7 +32,7 @@
 "wmctrl -r :ACTIVE: -e 0,$(xdpyinfo | awk '/dimensions/ {print $2}' | awk -F'x' '{print $1 / 2}'),0,0,0 ; xdotool getactivewindow windowsize 50% 100%"
   Mod4 + Control + Right
   # to close windows and open windows
-"xdotool getwindowfocus windowkill"
+"xdotool getactivewindow windowkill"
   Mod4 + c
 
   # changing the brightness of the window
@@ -44,8 +44,8 @@
  
 
   # changing the volume of the sound
-"amixer set Master 10%+"
+"pactl -- set-sink-volume 0 +10dB"
   Mod4 + Mod1 + Up
 
-"amixer set Master 10%-"
+"pactl -- set-sink-volume 0 -10dB"
   Mod4 + Mod1 + Down
