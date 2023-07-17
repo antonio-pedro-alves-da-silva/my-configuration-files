@@ -44,8 +44,8 @@
  
 
   # changing the volume of the sound
-"pactl -- set-sink-volume 0 +10%"
+"nodejs ~/my-configuration-files/aumentar-volume.js"
   Mod4 + Mod1 + Up
 
-"pactl -- set-sink-volume 0 -10%"
+"nodejs ~/my-configuration-files/diminuir-volume.js"
   Mod4 + Mod1 + Down
