@@ -1,7 +1,7 @@
 
 sudo apt install i3 git nautilus -y
 
-sudo apt install flatpak hardinfo snapd xdotool xbindkeys ffmpeg pavucontrol tilix wmctrl blueman -y
+sudo apt install flatpak hardinfo snapd xdotool ffmpeg pavucontrol tilix wmctrl blueman -y
 
 	instalaçaõ do zsh
 sudo apt install zsh curl wget -y
@@ -38,7 +38,6 @@ dirhistory  - add shorthands to move through directories like alt+Left arrow
 git clone --depth=1 https://github.com/A-P-A-D-S/my-configuration-files
 
 sudo apt install nodejs -y
-
 
 
 [add my_configurations.sh] - bash ~/my-configuration-files/.my_configurations.sh
