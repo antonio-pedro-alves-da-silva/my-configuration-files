@@ -1,23 +1,16 @@
 # Mod4 = windows 
 # Mod1 = Alt
 
-  # apps
-"code"
-  Mod4 + v
 
 "tilix"
   Mod4 + Return
 
   # Display Resolutions
 "xrandr -s 1366x768" 
-  Mod4 + 1
+  Mod4 + Mod1 + 1
 
 "xrandr -s 2048x1152"
-  Mod4 + 2
-
-  # Maximize and Minimize windows
-"wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
-  Mod4 + m
+  Mod4 + Mod1 + 2
 
 "wmctrl -r :ACTIVE: -b toggle,hidden"
   Mod4 + n
@@ -37,10 +30,10 @@
 
   # changing the brightness of the window
 "bash ~/my-configuration-files/diminuir-brilho.sh"
-  Mod4 + shift + Down
+  Mod4 + Mod1 + Left
 
 "bash ~/my-configuration-files/aumentar-brilho.sh"
-  Mod4 + shift + Up
+  Mod4 + Mod1 + Right
  
 
   # changing the volume of the sound
