@@ -1,15 +1,11 @@
 
-	installing apt-fast and other packages
-# axel help to download multiple files simultaneously and act as download accelerator.
-sudo apt install axel -y
+sudo apt install i3 git nautilus -y
 
-sudo add-apt-repository ppa:apt-fast/stable
-sudo apt update
-sudo apt install apt-fast -y
-
-sudo apt-fast install git npm nodejs flatpak curl hardinfo snapd xdotool xbindkeys nautilus ffmpeg pavucontrol zsh tilix wmctrl blueman -y
+sudo apt install flatpak hardinfo snapd xdotool xbindkeys ffmpeg pavucontrol tilix wmctrl blueman -y
 
 	instalaçaõ do zsh
+sudo apt install zsh curl wget -y
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -32,32 +28,24 @@ copypath
 dirhistory
 )
 
-    configurando os meus atalhos e o windown manager
-git clone --depth=1 https://github.com/A-P-A-D-S/my-configuration-files
-
-        desative todas os atalhos de shortcut keys se para não haver conflito
-        com xbindkeys        
-
-	session settings > autostarts
-[add my_configurations.sh] - bash ~/my-configuration-files/.my_configurations.sh
-
-cp ~/my-configuration-files/rc.xml ~/.config/openbox/rc.xml
-cp ~/my-configuration-files/.xbindkeysrc ~/.xbindkeysrc
-cp ~/my-configuration-files/.my_configurations.sh ~/
-
-
 zsh-syntax-highlighting - ajuda a identificar erros de digitação
 zsh-autosuggestions - ele sugere comandos com base no historico de comandos e mostra sugestoes se você digitar tab
 sudo - redigitaria o comando com sudo ao usar escape
 copypath - copiaria o diretorio atual ao usar copypath
 dirhistory  - add shorthands to move through directories like alt+Left arrow
 
+    configurando os meus atalhos
+git clone --depth=1 https://github.com/A-P-A-D-S/my-configuration-files
+
+sudo apt install nodejs -y
+
+
+
+[add my_configurations.sh] - bash ~/my-configuration-files/.my_configurations.sh
+
+cp ~/my-configuration-files/.xbindkeysrc ~/.xbindkeysrc
+cp ~/my-configuration-files/config ~/etc/i3/
+
   installing auto cpu frequency
 https://github.com/AdnanHodzic/auto-cpufreq
-
-	# changing the default browser and the default file manager
-preferences > Lxqt settings > file associations
-
-my chrome extension
-	suspend tab
 
