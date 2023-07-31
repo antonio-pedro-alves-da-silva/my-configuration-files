@@ -12,3 +12,5 @@ new_display=$(echo $gtf | awk '{print $1}')
 xrandr --newmode $gtf
 xrandr --addmode $output_name $new_display
 xrandr -s $(echo $new_display | bc)
+
+feh --bg-scale ~/my-configuration-files/wallpaper/fundo-de-galaxia-em-aquarela.jpg
