@@ -26,10 +26,6 @@ exec --no-startup-id dex --autostart --environment i3
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
@@ -42,7 +38,6 @@ exec feh --bg-scale ~/my-configuration-files/wallpaper/fundo-de-galaxia-em-aquar
 exec lxqt-powermanagement
 # enabling the tapclick on touchpad
 exec xinput set-prop $(xinput list | grep "Touchpad" | grep -o 'id=[0-9]*' | grep -o '[0-9]*') "libinput Tapping Enabled" 1
-
 # adding a new display resolution 2048x1152
 bindsym Mod4+Mod1+plus exec bash ~/my-configuration-files/aumentar-resoluçao.sh
 bindsym Mod4+Mod1+minus exec bash ~/my-configuration-files/diminuir-resoluçao.sh
@@ -167,7 +162,7 @@ mode "resize" {
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
-        bindsym ccedilla resize grow width 10 px or 10 ppt
+        bindsym ccedilla resize grow width 10 px or 10 ppt 
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -177,7 +172,7 @@ mode "resize" {
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
-        bindsym Escape mode "default"
+        bindsym Escape mode "default"  
         bindsym $mod+r mode "default"
 }
 
@@ -188,3 +183,4 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+ 
