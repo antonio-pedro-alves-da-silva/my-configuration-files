@@ -36,6 +36,8 @@ exec --no-startup-id nm-applet
 
 #########################################################################
 
+#setting the image 
+exec feh --bg-scale ~/my-configuration-files/wallpaper/fundo-de-galaxia-em-aquarela.jpg
 #adding the icon of power-management
 exec lxqt-powermanagement
 # enabling the tapclick on touchpad
