@@ -39,10 +39,6 @@ git clone --depth=1 https://github.com/A-P-A-D-S/my-configuration-files
 
 sudo apt install nodejs -y
 
-
-[add my_configurations.sh] - bash ~/my-configuration-files/.my_configurations.sh
-
-cp ~/my-configuration-files/.xbindkeysrc ~/.xbindkeysrc
 cp ~/my-configuration-files/config ~/.config/i3/
 
   installing auto cpu frequency
