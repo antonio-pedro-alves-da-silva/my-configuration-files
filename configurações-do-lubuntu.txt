@@ -62,6 +62,7 @@ To apply the changes, you need to restart the systemd-logind service using the f
 	sudo systemctl restart systemd-logind
 3. run the following command to see if it's working
 	sudo systemctl suspend
+
    making the computer suspend when we close the lid
 1. edit the file adding the below line sudo nano /etc/systemd/logind.conf
 	HandleLidSwitch=suspend
