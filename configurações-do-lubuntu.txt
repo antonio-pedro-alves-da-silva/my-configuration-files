@@ -54,7 +54,7 @@ UUID=your-swap-partion-uuid                                 none           swap 
 5. edit the file and modifie GRUB_CMDLINE_LINUX to GRUB_CMDLINE_LINUX="resume=UUID=your-swap-partion-uuid" /etc/default/grub 
 6. update grub to apply the changes
 
-	making the computer suspend when we close the lid
+	making the computer hibernate when we close the lid
 1.run the following comand
 	lxqt-config 
 and go to power management setting > Lid > Action when lid is close > On AC > Hibernate
