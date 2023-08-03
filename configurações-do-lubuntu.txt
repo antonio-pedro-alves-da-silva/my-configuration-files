@@ -52,3 +52,11 @@ https://github.com/AdnanHodzic/auto-cpufreq
 5. edit the file and modifie GRUB_CMDLINE_LINUX to GRUB_CMDLINE_LINUX="resume=UUID=your-swap-partion-uuid" /etc/default/grub 
 6. update grub to apply the changes
 
+  enabling hybrid suspending on ubuntu
+1. sudo nano /etc/systemd/sleep.conf Add the following lines to the file:
+	AllowHibernation=yes
+2. Restart the systemd-logind service:
+To apply the changes, you need to restart the systemd-logind service using the following command:
+	sudo systemctl restart systemd-logind
+3. run the following command to see if it's working
+	systemctl suspend
