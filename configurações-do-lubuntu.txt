@@ -1,6 +1,4 @@
-
-sudo apt install i3 git nautilus -y
-
+sudo apt install i3 git nautilus feh -y
 sudo apt install flatpak hardinfo snapd xdotool ffmpeg pavucontrol tilix wmctrl blueman -y
 
 	instalaçaõ do zsh
@@ -34,7 +32,7 @@ sudo - redigitaria o comando com sudo ao usar escape
 copypath - copiaria o diretorio atual ao usar copypath
 dirhistory  - add shorthands to move through directories like alt+Left arrow
 
-    configurando os meus atalhos
+    minhas configurações do i3
 git clone --depth=1 https://github.com/A-P-A-D-S/my-configuration-files
 
 sudo apt install nodejs -y
