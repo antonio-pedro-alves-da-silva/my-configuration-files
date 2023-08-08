@@ -37,7 +37,7 @@ git clone --depth=1 https://github.com/antonio-pedro-alves-da-silva/my-configura
 
 sudo apt install nodejs -y
 
-cp ~/my-configuration-files/config ~/.config/i3/
+cp ~/my-configuration-files/config ~/.config/i3/config
 
   installing auto cpu frequency
 https://github.com/AdnanHodzic/auto-cpufreq
