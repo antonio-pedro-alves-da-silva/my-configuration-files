@@ -9,7 +9,7 @@ sudo apt-fast install git wget curl
 
 #   personal packeages installation
 sudo apt-fast install hardinfo snapd ffmpeg pavucontrol blueman nodejs -y
-sudo apt-fast install i3 feh -y
+sudo apt-fast install i3 xdotool feh -y
 cd ~/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
