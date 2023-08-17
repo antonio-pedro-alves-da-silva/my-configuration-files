@@ -1,19 +1,18 @@
 #!/usr/bin/bash
 
-sudo su
 
-add-apt-repository ppa:apt-fast/stable
-apt-get install apt-fast -y
+sudo add-apt-repository ppa:apt-fast/stable
+sudo apt-get install apt-fast -y
 
 #    essential packeages for the installation
-apt-fast install git wget curl
+sudo apt-fast install git wget curl
 
 #   personal packeages installation
-apt-fast install hardinfo snapd ffmpeg pavucontrol blueman nodejs -y
-apt-fast install i3 feh -y
+sudo apt-fast install hardinfo snapd ffmpeg pavucontrol blueman nodejs -y
+sudo apt-fast install i3 feh -y
 cd ~/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
+sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
 sudo auto-cpufreq --install
@@ -26,27 +25,27 @@ cp ~/my-configuration-files/config ~/.config/i3/
 
 
 #     installation for working
-apt-fast install code -y
-apt-fast install tilix -y
+sudo apt-fast install code -y
+sudo apt-fast install tilix -y
 #php e apache
-apt-fast install apache2 php -y
+sudo apt-fast install apache2 php -y
 
 #mysql e workbench
-apt-fast install mysql-server -y
+sudo apt-fast install mysql-server -y
 mysql_secure_installation
-apt-get install mysql-workbench-community -y
+sudo apt-get install mysql-workbench-community -y
 
-apt-fast install libcups2 samba samba-common -y
+sudo apt-fast install libcups2 samba samba-common -y
 
 #     zsh installation and configuration
-apt-fast install zsh -y
+sudo apt-fast install zsh -y
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions
 
-apt-fast install fonts-powerline -y
+sudo apt-fast install fonts-powerline -y
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
 
 ' 
