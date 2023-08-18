@@ -5,7 +5,7 @@ sudo add-apt-repository ppa:apt-fast/stable
 sudo apt-get install apt-fast -y
 
 #    essential packeages for the installation
-sudo apt-fast install git wget curl
+sudo apt-fast install git wget curl -y
 
 #   personal packeages installation
 sudo apt-fast install hardinfo snapd ffmpeg pavucontrol blueman nodejs -y
@@ -32,8 +32,7 @@ sudo apt-fast install apache2 php -y
 
 #mysql e workbench
 sudo apt-fast install mysql-server -y
-mysql_secure_installation
-sudo apt-get install mysql-workbench-community -y
+sudo apt-fast install mysql-workbench-community -y
 
 sudo apt-fast install libcups2 samba samba-common -y
 
