@@ -31,10 +31,8 @@ sudo apt-fast install tilix -y
 sudo apt-fast install apache2 php -y
 
 #mysql e workbench
-sudo apt-fast install mysql-server -y
-'
-  instale o workebench no site oficial 
-'
+sudo apt-fast install mcysql-server -y
+sudo snap install mysql-workbench-community 
 
 sudo apt-fast install libcups2 samba samba-common -y
 
