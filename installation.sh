@@ -32,7 +32,9 @@ sudo apt-fast install apache2 php -y
 
 #mysql e workbench
 sudo apt-fast install mysql-server -y
-sudo apt-fast install mysql-workbench-community -y
+'
+  instale o workebench no site oficial 
+'
 
 sudo apt-fast install libcups2 samba samba-common -y
 
