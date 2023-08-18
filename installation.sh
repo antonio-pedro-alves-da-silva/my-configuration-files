@@ -14,6 +14,7 @@ sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
 sudo auto-cpufreq --install
+
 '
   configurações do i3
   
@@ -23,7 +24,13 @@ cp ~/my-configuration-files/config ~/.config/i3/
 
 
 #     installation for working
-sudo apt-fast install code -y
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code
+
 sudo apt-fast install tilix -y
 #php e apache
 sudo apt-fast install apache2 php -y
