@@ -39,8 +39,6 @@ sudo apt-fast install apache2 php -y
 sudo apt-fast install mysql-server -y
 sudo snap install mysql-workbench-community 
 
-sudo apt-fast install libcups2 samba samba-common -y
-
 #     zsh installation and configuration
 sudo apt-fast install zsh -y
 
