@@ -52,9 +52,11 @@ bindsym $mod+Return exec tilix
 # kill focused window
 bindsym $mod+c kill
 # kill the focused window process
-bindsym $mod+k exec xdotool getactivewindow windowkill
+bindsym $mod+shift+k exec xdotool getactivewindow windowkill
 # start dmenu (a program launcher)
 bindsym $mod+l exec --no-startup-id dmenu_run
+# command to take a print screen
+bindsym $mod+p exec cd ~/Downloads && scrot print_screen.png
 
 #############################################################################
 
