@@ -41,8 +41,8 @@ exec xinput set-prop $(xinput list | grep "Touchpad" | grep -o 'id=[0-9]*' | gre
 bindsym Mod4+Mod1+plus exec bash ~/my-configuration-files/aumentar-resoluçao.sh
 bindsym Mod4+Mod1+minus exec bash ~/my-configuration-files/diminuir-resoluçao.sh
 # chainging the brightness
-bindsym Mod4+Mod1+Left exec bash ~/my-configuration-files/diminuir-brilho.sh 
-bindsym Mod4+Mod1+Right exec bash ~/my-configuration-files/aumentar-brilho.sh
+bindsym Mod4+Mod1+Left exec lxqt-config-brightness -d 
+bindsym Mod4+Mod1+Right exec lxqt-config-brightness -i
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym Mod4+Mod1+Up exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +3% && $refresh_i3status
