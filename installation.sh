@@ -31,13 +31,14 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
 
+#
 sudo apt-fast install tilix -y
 #php e apache
 sudo apt-fast install apache2 php -y
 
 #mysql e workbench
 sudo apt-fast install mysql-server -y
-sudo snap install mysql-workbench-community 
+#para instalar o workbench instale mysql-apt-config depois de um update e use apt-get install mysql-workbench-community
 
 #     zsh installation and configuration
 sudo apt-fast install zsh -y
