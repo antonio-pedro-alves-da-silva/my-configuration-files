@@ -24,21 +24,14 @@ cp ~/my-configuration-files/config ~/.config/i3/
 
 
 #     installation for working
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-sudo apt install apt-transport-https
-sudo apt update
-sudo apt install code
+# install deb packeage for vscode
 
-#
+
 sudo apt-fast install tilix -y
 #php e apache
 sudo apt-fast install apache2 php -y
 
-#mysql e workbench
-sudo apt-fast install mysql-server -y
-#para instalar o workbench instale mysql-apt-config depois de um update e use apt-get install mysql-workbench-community
+# install mysql and mysql-workbench on the official site
 
 #     zsh installation and configuration
 sudo apt-fast install zsh -y
