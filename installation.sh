@@ -9,7 +9,7 @@ sudo apt-fast install git wget curl snapd -y
 sudo apt-fast install hardinfo ffmpeg pavucontrol nautilus blueman nodejs -y
 sudo apt-fast install i3 xdotool feh -y
 cd ~/Downloads
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
