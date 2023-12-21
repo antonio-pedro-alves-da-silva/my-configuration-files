@@ -56,8 +56,7 @@ bindsym $mod+c kill
 bindsym $mod+shift+k exec xdotool getactivewindow windowkill
 # start dmenu (a program launcher)
 bindsym $mod+l exec --no-startup-id dmenu_run
-# command to take a print screen
-bindsym $mod+p exec cd ~/Computer-Vault/imagens && scrot print_screen.png
+#changes
 
 #############################################################################
 
