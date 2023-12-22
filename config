@@ -57,7 +57,7 @@ bindsym $mod+shift+k exec xdotool getactivewindow windowkill
 # start dmenu (a program launcher)
 bindsym $mod+l exec --no-startup-id dmenu_run
 #changes
-
+bindsym $mod+p exec flameshot gui
 #############################################################################
 
 # Use Mouse+$mod to drag floating windows to their wanted position
