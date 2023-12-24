@@ -57,7 +57,7 @@ bindsym $mod+shift+k exec xdotool getactivewindow windowkill
 # start dmenu (a program launcher)
 bindsym $mod+l exec --no-startup-id dmenu_run
 # printscreen commands
-bindsym $mod+p exec flameshot screen
+bindsym $mod+p exec flameshot gui
 
 #############################################################################
 
